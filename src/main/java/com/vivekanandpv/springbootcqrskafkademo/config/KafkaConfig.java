@@ -1,4 +1,4 @@
-package com.vivekanandpv.springbootkafkademo.config;
+package com.vivekanandpv.springbootcqrskafkademo.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.beans.factory.annotation.Value;

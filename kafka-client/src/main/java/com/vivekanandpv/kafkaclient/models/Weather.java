@@ -1,10 +1,28 @@
 package com.vivekanandpv.kafkaclient.models;
 
-public class WeatherViewModel {
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Weather {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int weatherId;
+
     private String city;
     private double minimumTemperature;
     private double maximumTemperature;
     private int aqi;
+
+    public int getWeatherId() {
+        return weatherId;
+    }
+
+    public void setWeatherId(int weatherId) {
+        this.weatherId = weatherId;
+    }
 
     public String getCity() {
         return city;
